@@ -1,0 +1,127 @@
+body{
+	font: 14px Arial;
+	font-family:"Times New Roman",Georgia,Serif;
+	background-color: #61A5F8;
+	margin-left:auto;
+    margin-right:auto;
+}
+
+/*box div*/
+
+#box{
+	position: absolute;
+	top: 0px;
+	height: 550px;
+	left: 20px;
+	right: 20px;
+	background-color: #69B4FF;
+}
+
+ #box h1 {
+	position: absolute;
+	top: 0px;
+	left: 440px;
+ }
+
+ #main_img{
+	position: absolute;
+	top: 60px;
+	left: 440px;
+	border:2px solid #456879;
+}
+ 
+#query{
+	position: absolute;
+	top: 280px;
+	left: 250px;
+	border:2px solid #456879;
+	border-radius:10px;
+	height: 38px;
+	width: 900px;
+	font-size: 18px;
+	
+}
+
+#query:hover{
+	background-color: #B2CDFF;
+}
+ 
+#search {
+	position: absolute;
+	top: 280px;
+	right: 250px;
+	height: 42px;
+	width: 132px;
+ }
+ 
+#tNumber{
+	position: absolute;
+	top: 330px;
+	left: 250px;
+}
+
+#rTime{
+	position: absolute;
+	top: 330px;
+	left: 500px;
+}
+ 
+#tOption{
+	position: absolute;
+	top: 340px;
+	left: 420px;
+}
+
+#time{
+	position: absolute;
+	top: 340px;
+	left: 725px;
+}
+
+/*result div*/
+
+#results{ 
+    position: absolute;
+	top: 400px;
+	bottom: 50px;
+	left: 20px;
+	right: 20px;
+	height: 600px;
+	background-color: #69B4FF;
+}
+
+/*content div*/
+
+#content table{
+	position: relative;
+	top: 20px;
+	bottom: 10px;
+	left: 10px;
+	right: 10px;
+}
+
+#content{
+	position: relative;
+	top: -20px;
+	left: 250px;
+	height: 500px;
+	width: 1040px;
+	background-color: #FFF;
+	border:2px solid #456879;
+	border-radius:10px;
+}
+
+#notFoundImg{
+	position: relative;
+	top: 50px;
+	bottom: 30px;
+	left: 30px;
+	right: 30px;
+}
+
+#notFoundMessage{
+	position: relative;
+	top: -100px;
+	left: 280px;
+	font-size: 20px;
+}

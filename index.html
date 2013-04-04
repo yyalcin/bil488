@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	<title>Twtter Search Engine</title>
+</head>
+
+<body>
+
+	<div id="box">
+	
+		<h1>Search Tweets About Any Subject</h1>
+		
+		<img id="main_img" src="img/main_img.jpg" width="600" height="200" />
+		
+		<input type="text" id="query" />
+		<input type="image" id="search" onmouseover="changeButton()" onMouseOut="changeBack()" src="img/button.png"/>
+		
+		<p id="tNumber">How many tweets are listed?</p>
+		<p id="rTime">How much time are tweets refreshed?</p>
+		<script type="text/javascript">
+			/* select option for number of tweets */
+			var numberList;
+			for(var i=5;i<=30;i=i+5){
+				numberList += '<option>'+i+'</option>';
+			}
+			$("#box").append('<select id="tOption" >'+numberList+'</select>');
+			
+			/* select option for refresh time of tweets */
+			var timeList;
+			for(var i=5;i<=60;i=i+5){
+				timeList += '<option>'+i+'</option>';
+			}
+			$("#box").append('<select id="time" >'+timeList+'</select>');
+			
+		</script>		  
+	
+	</div>	
+
+	<div id="results">
+	
+		<div style="display:none" id="content">
+
+		</div>	
+	
+	</div>	
+	
+	<script type="text/javascript" src="search.js">	
+	
+	</script>
+		
+</body>
+</html>
